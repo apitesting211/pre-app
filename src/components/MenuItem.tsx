@@ -1,0 +1,18 @@
+type Props = {
+    item:{
+            name:string;
+            quantity:number;
+        }    
+}
+
+const MenuItem = (props:Props) => {
+return (
+    <li className="flex gap-5 justify-between">
+        <h2>{props.item.name}</h2>
+        <span>{props.item.quantity}</span>
+    </li>
+    
+)
+}
+
+export default MenuItem;
