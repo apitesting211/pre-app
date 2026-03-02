@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import MenuItem from "./MenuItem"
 
 const Cart = () => {
 
-    const [firstItem, setFirstItem] = useState({
+    const [firstItem] = useState({
         name:"Briyani", quantity:2
     });
+    // const [firstItem,setFirstItem] = useState({
+    //     name:"Briyani", quantity:2
+    // });
 //     useEffect(() => {
 //         setTimeout(()=>{
 //             setFirstItem(item => {
